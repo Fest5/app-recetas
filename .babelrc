@@ -1,0 +1,19 @@
+{
+    "presets": [
+      [
+       "@babel/preset-env",
+       {
+        "targets" : {
+            "browserslist": [
+                "last 2 version",
+                ">1%",
+                "not dead"
+              ]
+        },
+        "debug": true,
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+      ]
+     ]
+   }
