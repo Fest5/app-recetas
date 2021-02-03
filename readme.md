@@ -6,4 +6,4 @@
 4. Puedes agregar al carrito los ingredientes de las recetas para tenerlas en una lista
 5. Ahora es 100% Responsive y con bugs arreglados!
 
-En la carpeta src se encuentran los archivos js con los que se realizo la pagina y en la carpeta dist esta el bundle, que es todos los archivos empaquetados en uno gracias a webpack.
+En la carpeta src se encuentran los archivos js con los que se realizo la pagina y en la carpeta dist está el bundle, que es todos los archivos empaquetados en uno gracias a webpack. La página se encuentra en la descripción.
