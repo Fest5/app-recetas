@@ -4,3 +4,4 @@
 2. Haciendo click en la receta podras ver todos los detalles. Tambien puedes cambiar para cuanta gente deseas que sea la receta, entonces cambiara la cantidad de ingredientes necesaria
 3. Tambien puedes darle like a la receta para guardarla
 4. Puedes agregar al carrito los ingredientes de las recetas para tenerlas en una lista
+5. Ahora es 100% Responsive y con bugs arreglados!

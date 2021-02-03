@@ -17,6 +17,7 @@ export default class Recipe {
             this.ingredients = res.data.extendedIngredients
             this.time = res.data.readyInMinutes
             this.servings = res.data.servings
+            console.log(res)
             
         }
         catch(error) {
@@ -34,7 +35,7 @@ export default class Recipe {
         const newIngredients = this.ingredients.map(el => {
             let unit = el.unit
             let unitShort = el.measures.us.unitShort
-            let allUnits = [unitShort, 'tbsps', 'tbsp', 'kg', 'g']
+            let allUnits = [unitShort, 'cloves','cup', 'pound', 'Tbs', 'tsp', 'tbsps', 'tbsp', 'kg', 'g']
 
             // 1) uniform units
             let ingredient = el.original
@@ -55,17 +56,19 @@ export default class Recipe {
             if (unitIndex > -1) {
                 // There is a Unit
                 // Ex. 4 1/2 cups, arrCount is [4, 1/2]. 4 cups, arrCount is [4]
-                const arrCount = arrIng.slice(0, unitIndex);
+                //const arrCount = arrIng.slice(0, unitIndex);
+                const arrCount = [el.measures.us.amount]
+               
 
-                let count
+               /*  let count
                 if (arrCount.length === 1) {
                     count = eval(arrIng[0].replace('-', '+'))
                 } else {
                     count = eval(arrIng.slice(0, unitIndex).join('+'));
-                }
+                } */
 
                 objIng = {
-                    count,
+                    count: arrCount,
                     unit: arrIng[unitIndex],
                     ingredient: arrIng.slice(unitIndex + 1).join(' ')
                 }
