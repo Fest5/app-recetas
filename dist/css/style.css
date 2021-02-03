@@ -34,6 +34,13 @@ html {
     font-size: 50%;
   }
 }
+
+@media only screen and (max-width: 40.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -457,6 +464,14 @@ body {
 @media only screen and (max-width: 56.25em) {
   #default__title {
     transform: translate(-50%, 125%) skewY(-6deg);
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  #default__title {
+    transform: translate(-50%, 125%) skewY(-6deg);
+    font-size: 2rem;
   }
 }
 
